@@ -1,0 +1,56 @@
+{
+  "name": "smart_notes",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://master.d1ri7b8na6h62v.amplifyapp.com",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.1.1",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^8.1.3",
+    "antd": "^3.26.11",
+    "canvas": "^2.6.1",
+    "downloadjs": "^1.4.7",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "file-saver": "^2.0.2",
+    "html2pdf.js": "^0.9.1",
+    "jest-canvas-mock": "^2.2.0",
+    "jquery": "^3.4.1",
+    "pusher-js": "^5.1.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-dropzone": "^10.2.1",
+    "react-keyboard-event-handler": "^1.5.3",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.3.0",
+    "react-test-renderer": "^16.12.0",
+    "sinon": "^9.0.0",
+    "test-keyboard": "^0.7.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "client_secret": "<rootDir>/src/EmptyModule.js"
+    }
+  }
+}

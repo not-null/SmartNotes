@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+html {
+  font-size: 100%;
+}
+
+.letter,
+.spaceDiv,
+.wordDiv,
+.symbolWrapper {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.upperBound,
+.lowerBound {
+  font-size: 0.5rem;
+  /* width: 1ch; */
+}
+
+.wrapper {
+  background-color: rgb(231, 231, 231);
+  width: 100%;
+  /* height: 100%; */
+  position: absolute;
+}
+
+.note {
+  border-radius: 10px;
+  /* overflow-wrap: break-word; */
+  color: black;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 21cm;
+  min-height: 29.7cm;
+  background-color: white;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.dropZone {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  /*z-index: 10;*/
+}
+/*---HEADER---*/
+
+.blackHeader {
+  background-color: black;
+  height: 5rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 1), rgb(44, 44, 44));
+  color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  display: table-cell;
+  vertical-align: middle;
+  width: 100vw;
+}
+
+.right {
+  float: right;
+  margin-right: 1rem;
+}
+
+.headerIcon {
+  width: 40px;
+  height: 37px;
+  padding: 0.5rem !important;
+}
+
+.open {
+  margin-left: 0.1rem;
+}
+
+.drive {
+  width: 40px;
+  margin-left: 0.05rem;
+  margin-right: 0.05rem;
+  padding-top: 0.4rem !important;
+}
+
+.driveBehind {
+  margin-left: -2.55rem !important;
+}
+
+.save {
+  margin-left: 0.05rem;
+  margin-right: 0.05rem;
+}
+
+.saveAsDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(233, 233, 233);
+  color: black;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+
+  cursor: pointer;
+
+  transition: background-color 250ms ease-in;
+}
+
+.saveAsDiv:hover {
+  background-color: white;
+}
+
+.saveAsDiv:hover .innerSaveAsDiv {
+  transform: scale(1.1);
+}
+
+.innerSaveAsDiv {
+  transform: scale(0.8);
+  text-align: center;
+  transition: transform 250ms ease-in, box-shadow 250ms ease-in;
+}
+
+.saveAsIcon {
+  width: 50%;
+  height: 50%;
+}
+
+.saveAsWrapper {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 5%;
+  grid-template-columns: 30% 30% 30%;
+  width: fit-content;
+}
+
+.headerIcon_behind {
+  position: absolute;
+  width: 40px;
+  height: 37px;
+  padding: 0.5rem;
+  margin-left: -2.5rem;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.start_button_text {
+  margin: 1rem;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+.noteName {
+  left: 50vw;
+  vertical-align: middle;
+  position: absolute;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  transform: translate(-50%, 10%);
+}
+
+.whiteButton {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10rem;
+  text-align: center;
+  margin-left: 1rem;
+  transition: background-color 0.4s, color 0.4s;
+  cursor: pointer;
+  outline: none;
+  padding: 0px;
+}
+
+.whiteButton:hover {
+  color: black;
+  background-color: white;
+}
+
+.whiteButton:hover .headerIcon_behind {
+  opacity: 1;
+}
+
+.recording {
+  background-color: #ff0100;
+}
+
+.recording .headerIcon_behind {
+  opacity: 1;
+}
+
+/*---------------*/
+
+/*--SUGGESTIONS--*/
+
+#suggestionsTable {
+  position: absolute;
+  width: fit-content;
+  background-color: rgb(58, 58, 58);
+  color: white;
+  /*z-index: 999;*/
+  border-collapse: collapse;
+  font-weight: 300;
+  border: solid transparent 1px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.suggestion_name {
+  float: left;
+  padding-left: 5px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.suggestion_symbol {
+  float: right;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.suggestion {
+  border-bottom: 1pt solid gray;
+}
+
+#suggestionsTable tr:nth-child(even) {
+  background-color: rgb(51, 51, 51);
+}
+
+#suggestionsTable tr:focus {
+  background-color: #619cff;
+  outline: 0;
+  /*remove outline*/
+}
+
+/*------------*/
+
+/*---CURSOR---*/
+
+.cursor {
+  position: absolute;
+  border-right: 2px solid black;
+  height: 1.25rem;
+  /*z-index: 10;*/
+  margin-top: 2px;
+  margin-bottom: 2px;
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 0;
+  }
+
+  51%,
+  100% {
+    opacity: 1;
+  }
+}
+
+/*------*/

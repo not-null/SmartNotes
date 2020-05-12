@@ -7,6 +7,16 @@
 [![AutoSMS banner](/README_res/banner.png?raw=true)](#)
 
 ## About
+
 Smartnotes is a web app that:
-* 🔍 Analyzes the contents of your incoming messages.
-* 💬 Automatically Responds with the responses that YOU define!
+
+- 🔍 Analyzes the contents of your incoming messages.
+- 💬 Automatically Responds with the responses that YOU define!
+
+## Installation
+
+1. Install [node](https://nodejs.org/).
+2. Clone this repo.
+3. Navigate to `<this repo>/SmartNotes`.
+4. Run `npm install`.
+5. Run `npm start`.

@@ -1,0 +1,14 @@
+{
+    "master": {
+        "awscloudformation": {
+            "AuthRoleName": "smartnotes-20200304162115-authRole",
+            "UnauthRoleArn": "arn:aws:iam::612181680933:role/smartnotes-20200304162115-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::612181680933:role/smartnotes-20200304162115-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "smartnotes-20200304162115-deployment",
+            "UnauthRoleName": "smartnotes-20200304162115-unauthRole",
+            "StackName": "smartnotes-20200304162115",
+            "StackId": "arn:aws:cloudformation:us-east-2:612181680933:stack/smartnotes-20200304162115/ca832b20-5e2b-11ea-856c-064ea827a74e"
+        }
+    }
+}
