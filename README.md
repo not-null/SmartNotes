@@ -16,8 +16,8 @@ Smartnotes is a web app that:
 
 ## Installation
 
-1. Install [node](https://nodejs.org/).
-2. Clone this repo.
-3. Navigate to `<this repo>/SmartNotes`.
-4. Run `npm install`.
-5. Run `npm start`.
+1. Install [node](https://nodejs.org/)
+2. Clone this repo
+3. Navigate to `<this repo>/SmartNotes`
+4. Run `npm install`
+5. Run `npm start`
