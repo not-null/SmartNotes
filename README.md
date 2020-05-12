@@ -10,8 +10,9 @@
 
 Smartnotes is a web app that:
 
-- 🔍 Analyzes the contents of your incoming messages.
-- 💬 Automatically Responds with the responses that YOU define!
+- 🔍 Analyzes what you write and suggests symbols and formulas
+- ✒ Exports to LaTeX
+- 💾 Saves to the custom file format *.note* making it possible to open and continue writing at any time!
 
 ## Installation
 
