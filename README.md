@@ -8,12 +8,16 @@
 
 ## About
 
-Smartnotes is a web app that:
+Smartnotes is a web app that aims to make writing complex notes easy.
+
+### Key features
 
 - 🔍 Analyzes what you write and suggests symbols and formulas
 - ✒ Exports to LaTeX
 - 💾 Saves to the custom file format *.note* making it possible to open and continue writing at any time!
 - 🎤 Listens to what you say, so that you don't even need to write!
+
+The web app was hosted on AWS Amplify and implemented Continous Integration (CI) as well as Continous Delivery (CD).
 
 ## Installation
 
