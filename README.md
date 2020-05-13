@@ -13,6 +13,7 @@ Smartnotes is a web app that:
 - 🔍 Analyzes what you write and suggests symbols and formulas
 - ✒ Exports to LaTeX
 - 💾 Saves to the custom file format *.note* making it possible to open and continue writing at any time!
+- 🎤 Listens to what you say, so that you don't even need to write!
 
 ## Installation
 
