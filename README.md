@@ -21,3 +21,7 @@ Smartnotes is a web app that:
 3. Navigate to `<this repo>/SmartNotes`
 4. Run `npm install`
 5. Run `npm start`
+
+## Tests
+
+To run the tests, navigate to `<this repo>/SmartNotes` and run `npm test`. 3 test files will run with a total of 9 tests.
