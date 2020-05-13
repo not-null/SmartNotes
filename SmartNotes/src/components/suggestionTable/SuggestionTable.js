@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { getSuggestions } from "./symbolsUtils";
+import { getSuggestions } from "../../utils/symbolsUtils";
 
 class SuggestionTable extends Component {
   suggestionsTable;

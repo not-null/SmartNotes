@@ -1,11 +1,15 @@
 import React, { Component } from "react";
 import "./styleNote.css";
-import { downloadLaTeX, downloadHTML, ImportFileHandler } from "./fileIO";
-import SaveModal from "./SaveModal";
+import {
+  downloadLaTeX,
+  downloadHTML,
+  ImportFileHandler,
+} from "../../utils/fileIO";
+import SaveModal from "../saveModal/SaveModal";
 
-import Voice from "./Voice";
-import { rowsNeededForSymbol } from "./symbolsUtils";
-import SuggestionTable from "./SuggestionTable";
+import Voice from "../voice/Voice";
+import { rowsNeededForSymbol } from "../../utils/symbolsUtils";
+import SuggestionTable from "../suggestionTable/SuggestionTable";
 
 class Note extends Component {
   stop;

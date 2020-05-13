@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { getExactSymbolMatch } from "./symbolsUtils";
+import { getExactSymbolMatch } from "../../utils/symbolsUtils";
 import { Popover } from "antd";
 
 class Voice extends Component {

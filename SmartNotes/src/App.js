@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Note from "./Note";
-import Home from "./Home";
+import Note from "./components/note/Note";
+import Home from "./components/home/Home";
 
 class App extends Component {
   render() {

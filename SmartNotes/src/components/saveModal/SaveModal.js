@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import { Modal } from "antd";
 import "antd/dist/antd.css";
 import html2pdf from "html2pdf.js";
-import { FileSaver, saveAs } from "file-saver";
-import { HtmlToLatex } from "./LaTeX";
 
 export default class SaveModal extends Component {
   constructor(props) {
@@ -12,7 +10,7 @@ export default class SaveModal extends Component {
     this.state = {
       modalVisible: props.visible,
       selected: null,
-      okClicked: false
+      okClicked: false,
     };
 
     this.exportPDF = this.exportPDF.bind(this);
@@ -20,7 +18,7 @@ export default class SaveModal extends Component {
 
   componentDidMount() {}
 
-  handleChange = e => {
+  handleChange = (e) => {
     this.setState({ selected: e.target.value });
   };
 

@@ -1,54 +1,51 @@
 {
-    "symbols": {
-        "mathematical": {
-            "integral": "\u222b",
-            "sum": "\u2211",
-            "element of": "∈",
-            "there exists": "∃",
-            "subset of or equal to": "⊆",
-            "not equal to": "≠",
-            "intersection": "∩",
-            "union": "∪",
-            "empty set": "∅",
-            "left right double arrow": "⇔",
-            "rightwards double arrow": "⇒"
-        },
-        "greek_alphabet": {
-            "alpha": "\u03b1",
-            "beta": "\u03b2",
-            "gamma": "\u03b3",
-            "capital gamma": "\u0393",
-            "delta": "\u03b4",
-            "capital delta": "\u0394",
-            "epsilon": "\u03b5",
-            "zeta": "\u03b6",
-            "theta": "\u03b8",
-            "capital theta": "\u0398",
-            "lambda": "\u03bb",
-            "capital lambda": "\u039b",
-            "mu": "\u03bc",
-            "xi": "\u03be",
-            "capital xi": "\u039e",
-            "pi": "\u03c0",
-            "capital pi": "\u03a0",
-            "sigma": "\u03c3",
-            "capital sigma": "\u03a3",
-            "phi": "\u03c6",
-            "capital phi": "\u03a6",
-            "chi": "\u03c7",
-            "capital chi": "\u03a7",
-            "psi": "\u03c8",
-            "capital psi": "\u03a8",
-            "omega": "\u03c9",
-            "capital omega": "\u03a9"
-        }, 
-        "double_struck_alphabet" : {
-            "capital_a": "𝔸"
-        }
+  "symbols": {
+    "mathematical": {
+      "integral": "\u222b",
+      "sum": "\u2211",
+      "element of": "∈",
+      "there exists": "∃",
+      "subset of or equal to": "⊆",
+      "not equal to": "≠",
+      "intersection": "∩",
+      "union": "∪",
+      "empty set": "∅",
+      "left right double arrow": "⇔",
+      "rightwards double arrow": "⇒"
     },
-    "threeRows": [
-        "\u222b",
-        "\u2211"
-    ],
-    "twoRows": []
+    "greek_alphabet": {
+      "alpha": "\u03b1",
+      "beta": "\u03b2",
+      "gamma": "\u03b3",
+      "capital gamma": "\u0393",
+      "delta": "\u03b4",
+      "capital delta": "\u0394",
+      "epsilon": "\u03b5",
+      "zeta": "\u03b6",
+      "theta": "\u03b8",
+      "capital theta": "\u0398",
+      "lambda": "\u03bb",
+      "capital lambda": "\u039b",
+      "mu": "\u03bc",
+      "xi": "\u03be",
+      "capital xi": "\u039e",
+      "pi": "\u03c0",
+      "capital pi": "\u03a0",
+      "sigma": "\u03c3",
+      "capital sigma": "\u03a3",
+      "phi": "\u03c6",
+      "capital phi": "\u03a6",
+      "chi": "\u03c7",
+      "capital chi": "\u03a7",
+      "psi": "\u03c8",
+      "capital psi": "\u03a8",
+      "omega": "\u03c9",
+      "capital omega": "\u03a9"
+    },
+    "double_struck_alphabet": {
+      "capital_a": "𝔸"
+    }
+  },
+  "threeRows": ["\u222b", "\u2211"],
+  "twoRows": []
 }

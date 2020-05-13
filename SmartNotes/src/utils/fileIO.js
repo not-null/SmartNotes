@@ -1,6 +1,5 @@
-import React, { Component, useCallback } from "react";
-import "./styleNote.css";
-import { useDropzone } from "react-dropzone";
+import React, { Component } from "react";
+import "../components/note/styleNote.css";
 import { HtmlToLatex } from "./LaTeX";
 
 export function downloadHTML(noteName) {
@@ -53,12 +52,12 @@ export class ImportFileHandler extends Component {
     input.accept = ".note";
     input.click();
 
-    input.onchange = e => {
+    input.onchange = (e) => {
       this.handleFileChosen(e.target.files[0]);
     };
   };
 
-  handleFileRead = e => {
+  handleFileRead = (e) => {
     const content = this.fileReader.result;
     console.log("is here");
     //do something with content
@@ -66,45 +65,15 @@ export class ImportFileHandler extends Component {
     this.props.registerEventHandlers();
   };
 
-  handleFileChosen = file => {
+  handleFileChosen = (file) => {
     this.fileReader = new FileReader();
     this.fileReader.onloadend = this.handleFileRead;
     this.fileReader.readAsText(file);
   };
 
-  MyDropzone() {
-    const onDrop = useCallback(acceptedFiles => {
-      // Do something with the files
-    }, []);
-    const { getRootProps, getInputProps, isDragActive } = useDropzone({
-      onDrop
-    });
-
-    return (
-      <div {...getRootProps()}>
-        <input {...getInputProps()} />
-        {isDragActive ? (
-          <p>Drop the files here ...</p>
-        ) : (
-          <p>Drag 'n' drop some files here, or click to select files</p>
-        )}
-      </div>
-    );
-  }
-
   render() {
     return (
       <div style={{ display: "inline-block" }}>
-        {/* <Dropzone
-          noClick
-          onDrop={acceptedFiles => {
-            console.log(acceptedFiles);
-          }}
-        >
-          {({ getRootProps, getInputProps, isDragActive }) => (
-            <div {...getRootProps()} className="dropZone" />
-          )}
-        </Dropzone> */}
         <button
           className="whiteButton"
           onClick={this.loadHtml}
