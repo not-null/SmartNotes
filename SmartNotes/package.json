@@ -13,7 +13,7 @@
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "file-saver": "^2.0.2",
-    "html2pdf.js": "^0.9.1",
+    "html2pdf.js": "^0.10.3",
     "jest-canvas-mock": "^2.2.0",
     "jquery": "^3.4.1",
     "pusher-js": "^5.1.1",
